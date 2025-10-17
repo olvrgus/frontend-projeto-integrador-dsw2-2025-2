@@ -12,6 +12,9 @@ const NavBar = () => {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+                            <NavLink className="nav-link" to="/discos:id">Discos</NavLink>
+                        </li>
+                        <li class="nav-item">
                             <NavLink className="nav-link" to="/sobre">Sobre</NavLink>
                         </li>
                         <li class="nav-item">
