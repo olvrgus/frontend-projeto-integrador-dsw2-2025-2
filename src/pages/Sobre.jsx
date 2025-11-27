@@ -5,7 +5,7 @@ const Sobre = () => {
   return (
     <div>
       <NavBar/>
-      Sobre
+      
     </div>
   )
 }

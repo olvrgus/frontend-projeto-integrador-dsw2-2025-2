@@ -3,7 +3,6 @@ import React from "react"
 import NavBar from "../../components/NavBar"
 import Disco from "../../components/Disco";
 import { Link } from "react-router-dom";
-import './discos.css'
 
 const DiscosIndex = () => {
   const [discos, setDiscos] = React.useState([]);
@@ -25,11 +24,8 @@ const DiscosIndex = () => {
   return (
     <>
       <NavBar />
-      <div className="title-custom text-center ">
-      <h1 >DOOM'S DISKS</h1>
-      </div>
+      {discos.map(disco => <div> {disco.id} - {disco.album} - {disco.artista}</div>)}
       
-
       <div className="container text-start">
 
         {/* Card mt bala */}
