@@ -32,7 +32,4 @@ const registrar = () => {
     )
 }
 
-
-
-
-export default Registrar
+export default registrar

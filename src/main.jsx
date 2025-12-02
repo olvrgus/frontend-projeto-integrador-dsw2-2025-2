@@ -14,17 +14,17 @@ import Login from "./pages/Login.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+const router = createBrowserRouter([
+  { path: "/sobre", element: <Sobre /> },
+  { path: "/contato", element: <Contato /> },
+  { path: "/discos", element: <DiscosIndex /> },
+  { path: "/discos/create", element: <DiscosCreate /> },
+  { path: "/discos/:id", element: <DiscosShow /> },
+  { path: "/discos/:id/edit", element: <DiscosEdit /> },
+  { path: "/registrar", element: <Registrar /> },
+  { path: "/login", element: <Login /> },
+]);
 
-const router = createBrowserRouter(
-    { path: "/sobre", element: <Sobre /> },
-    { path: "/contato", element: <Contato /> },
-    { path: "/discos", element: <DiscosIndex /> },
-    { path: "/discos/create", element: <DiscosCreate /> },
-    { path: "/discos/:id", element: <DiscosShow /> },
-    { path: "/discos/:id/edit", element: <DiscosEdit /> },
-    { path: "/discos/Registrar", element: <Registrar /> },
-    { path: "/discos/Login", element: <Login /> },
-);
 createRoot(document.getElementById("root")).render(
-    <RouterProvider router={router} />
+  <RouterProvider router={router} />
 );
